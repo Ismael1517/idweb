@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Laboratorio - Formulario Estructurado</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+    <div class="seccion-izquierda">
+        <img src="logo-unsa-completo.png" alt="logo UNSA" class="logo-unsa-completo">
+        <form action="exito.html" method="POST">
+            <fieldset>
+                <legend>Registro Universitario</legend>
+                <div>
+                    <label for="nombre">Nombre </label>
+                    <br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Carlos" required>
+
+                </div>
+                <br>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Perez Gomez" required>
+                </div>
+                <br>
+                <div class="fila-doble">
+                 <div class="campo-grupo">
+                        <label for="cui">CUI:</label>
+                        <input type="text" id="cui" name="cui" placeholder="Ej: 20231234" required pattern="[0-9]{8}" title="Solo 8 números">
+                 </div>
+                 <br>
+                 <div class="campo-grupo">
+                     <label for="correo">Correo Electronico:</label>
+                      <input type="email" id="correo" name="correo" placeholder="correo@unsa.edu.pe" required>
+                  </div>
+               </div>
+                <br>
+                <div style="margin-bottom: 15px;">
+                    <label for="contra">Contrasena:</label>
+                    <input type="password" id="contra" name="contra" placeholder="Minimo 8 caracteres" required>
+               </div>
+                <br>
+                <div>
+                    <label><input type="radio" name="turno" value=temprano>Temprano</label>
+                    <label><input type="radio" name="turno" value="tarde">Tarde</label>
+
+                </div>
+                <br>
+                <div>
+                    <select id="carrera" name="carrera">
+                    <option value="ingsis">Ing Sistemas</option>
+                    <option value="ing tel">Ing Telecomunicaciones</option>
+                </select>
+                </div>
+                <br>
+                <div>
+                    <label>
+                    <input type="checkbox" name="terminos" required>Acepto Terminos y condiciones
+                </label>
+                </div>
+                <br>
+                <input type="submit" value="Enviar Formulario">
+            </fieldset>
+        </form>
+    </div>
+    <div class="seccion-derecha">
+        <img src="campus-unsa.png" alt="campus-unsa" class="imagen-derecha">
+    </div>
+
+</body>
+</html>
