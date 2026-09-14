@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+header, nav, main, footer {
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    padding: 8px;
+}
