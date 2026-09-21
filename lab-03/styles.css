@@ -1,0 +1,35 @@
+.grid-cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+.enlace {
+    color: #212529;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Para pantalla de celular */
+@media (max-width: 600px) {
+    .grid-cursos {
+        grid-template-columns: 1fr;
+    }
+}

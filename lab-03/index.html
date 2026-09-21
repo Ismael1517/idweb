@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--mis estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Sistema web gestion academica</title>
+</head>
+<body>
+    <!--BARRA DE NAVEGACION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gestion  Academica</a>
+            <!--boton de hamburguesa-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"></button>
+            <span class="navbar-toggler-icon"></span>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Noticias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero text-center py-5 bg-light border-bottom">
+        <div class="container py-3">
+            <h1 class="fw-bold mb-3">Aprende Tecnología de Forma Sencilla</h1>
+            <p class="text-muted lead mb-4">Plataforma educativa diseñada para estudiantes de programación.</p>
+            <a href="#cursos" class="btn btn-dark">Ver Cursos Disponibles</a>
+        </div>
+    </section>
+
+    <!-- 3. CATÁLOGO DE LOS 4 CURSOS -->
+    <section class="container py-5" id="cursos">
+        <h2 class="fw-bold mb-4 text-center">Cursos Disponibles</h2>
+
+        <!-- Grilla de 2 columnas simple -->
+        <div class="grid-cursos">
+
+            <!-- Curso 1 -->
+            <div class="tarjeta">
+                <h3>Taller de Narrativa Digital</h3>
+                <p>Aprende a contar historias usando herramientas digitales e interactivas.</p>
+                <a href="#" class="enlace">Ver detalles &rarr;</a>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="tarjeta">
+                <h3>Estructuras Discretas</h3>
+                <p>Conceptos de lógica, teoría de conjuntos y grafos esenciales para computación.</p>
+                <a href="#" class="enlace">Ver detalles &rarr;</a>
+            </div>
+
+            <!-- Curso 3 -->
+            <div class="tarjeta">
+                <h3>Desarrollo de Software POO</h3>
+                <p>Principios de programación orientada a objetos: clases, herencia y objetos.</p>
+                <a href="#" class="enlace">Ver detalles &rarr;</a>
+            </div>
+
+            <!-- Curso 4 -->
+            <div class="tarjeta">
+                <h3>Introducción al Desarrollo Web</h3>
+                <p>Crea páginas web simples y atractivas utilizando HTML5 y CSS3.</p>
+                <a href="#" class="enlace">Ver detalles &rarr;</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="text-center py-4 text-muted border-top bg-light">
+        <p class="mb-0">© 2026 Sistema Web de Gestión Académica</p>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
