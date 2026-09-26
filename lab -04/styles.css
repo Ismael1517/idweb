@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Tamaño del Logo UNSA */
+.logo-unsa {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* COLOR GUINDA INSTITUCIONAL DE LA UNSA */
+.text-unsa {
+    color: #7A001E;
+}
+
+.btn-custom {
+    background-color: #7A001E;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #5b0016; /* Guinda más oscuro para efecto hover */
+    color: white;
+}
+
+/* Tarjetas y Bordes con estilo Guinda */
+.card-custom {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.custom-input {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.custom-input:focus {
+    border-color: #7A001E;
+    box-shadow: 0 0 0 3px rgba(122, 0, 30, 0.15);
+}
+
+/* Botones de Filtro */
+.filter-btn {
+    border: none;
+    background: transparent;
+    color: #64748b;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 6px !important;
+}
+
+.filter-btn.active {
+    background-color: #7A001E !important;
+    color: white !important;
+}
+
+/* Contador superior */
+.badge-counter {
+    background-color: #fdf2f4;
+    color: #7A001E;
+    border: 1px solid #f7d6dc;
+}
+
+/* Tareas Completadas y Tarjetas */
+.tarea-completada {
+    text-decoration: line-through;
+    color: #a0aec0;
+}
+
+.card-tarea {
+    border-left: 4px solid #7A001E;
+    transition: transform 0.15s ease;
+}
+
+.card-tarea:hover {
+    transform: translateY(-2px);
+}
