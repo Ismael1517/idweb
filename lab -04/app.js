@@ -1,4 +1,3 @@
-// 1. ESTADO GLOBAL Y PERSISTENCIA
 let tareas = JSON.parse(localStorage.getItem('tareasUNSA')) || [];
 let filtroActual = 'todas';
 
@@ -15,7 +14,6 @@ function guardarEnLocalStorage() {
     localStorage.setItem('tareasUNSA', JSON.stringify(tareas));
 }
 
-// 2. CAPTURA Y VALIDACIÓN
 formTarea.addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -62,7 +60,6 @@ function mostrarAlerta(mensaje, tipo) {
     `;
 }
 
-// 3. RENDERIZADO Y MANIPULACIÓN DEL DOM
 function renderizarTareas() {
     listaTareas.innerHTML = '';
 
